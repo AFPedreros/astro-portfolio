@@ -1,0 +1,17 @@
+---
+import { Icons } from "@components/Icons";
+
+interface Props {
+  href: string;
+  iconName: keyof typeof Icons;
+}
+
+const { href, iconName } = Astro.props;
+
+const IconComponent = Icons[iconName];
+---
+
+<a
+  class="inline-flex h-8 w-8 items-center justify-center whitespace-nowrap rounded-full border border-[#bababa] text-[#6b7280] transition-colors hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300"
+  href={href} target="_blank"><IconComponent className="h-4 w-4" /></a
+>
