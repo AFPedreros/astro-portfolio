@@ -1,5 +1,5 @@
 ---
-import { Icons } from "@components/Icons";
+import { Icons } from "@components/Icons.tsx";
 
 interface Props {
   href: string;
@@ -12,6 +12,7 @@ const IconComponent = Icons[iconName];
 ---
 
 <a
-  class="inline-flex h-8 w-8 items-center justify-center whitespace-nowrap rounded-full border border-[#bababa] text-[#6b7280] transition-colors hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300"
-  href={href} target="_blank"><IconComponent className="h-4 w-4" /></a
+  class="inline-flex h-8 w-8 items-center justify-center whitespace-nowrap rounded-full border border-[#bababa] text-[#6b7280] transition-colors duration-300 hover:bg-[#1a1a1a] hover:text-white"
+  href={href}
+  target="_blank"><IconComponent className="h-4 w-4" /></a
 >
