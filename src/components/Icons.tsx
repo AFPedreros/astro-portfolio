@@ -1,4 +1,4 @@
-import { Globe2, Phone, Mail, type LucideIcon } from "lucide-react";
+import { Globe2, Phone, Mail, X, Menu, type LucideIcon } from "lucide-react";
 
 export type Icon = LucideIcon;
 type IconProps = React.HTMLAttributes<SVGElement>;
@@ -7,6 +7,8 @@ export const Icons = {
   globe: Globe2,
   mail: Mail,
   phone: Phone,
+  close: X,
+  menu: Menu,
   github: (props: IconProps) => (
     <svg role="img" viewBox="0 0 24 24" {...props}>
       <path

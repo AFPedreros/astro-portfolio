@@ -1,3 +1,5 @@
+import animations from "tailwindcss-animated";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -10,6 +12,14 @@ export default {
         "2xl": "1400px",
       },
     },
+    extend: {
+      colors: {
+        primary: "#1a1a1a",
+        secondary: "#6b7280",
+        background: "#ffffff",
+        border: "#bababa",
+      },
+    },
   },
-  plugins: [],
+  plugins: [animations],
 };
