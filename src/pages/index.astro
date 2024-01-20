@@ -10,11 +10,15 @@ import ProjectsSection from "@components/ProjectsSection.astro";
 <Layout title="Felipe Pedreros | Full Stack Developer.">
   <main class="container w-full">
     <HeroSection />
-    <div class="-mt-8 md:-mt-12 lg:-mt-24">
+    <div id="experience" class="-mt-16 pt-8 md:pt-4 lg:pt-0 lg:-mt-24">
       <ExperienceSection />
     </div>
-    <ProjectsSection />
-    <SkillsSection />
+    <div id="projects" class="-mt-8 pt-8 md:pt-4 lg:pt-0 lg:-mt-12">
+      <ProjectsSection />
+    </div>
+    <div id="skills" class="-mt-8 pt-8 md:pt-4 lg:pt-0 lg:-mt-12">
+      <SkillsSection />
+    </div>
     <AboutSection />
   </main>
 </Layout>
