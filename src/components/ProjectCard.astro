@@ -1,15 +1,17 @@
 ---
 import Badge from "@/components/Badge.astro";
+import LinkButton from "@/components/LinkButton.astro";
 
 type Props = {
   title: string;
   description: string;
   image: string;
   tags: string[];
-  url: string;
+  gitHubUrl: string;
+  siteUrl: string;
 };
 
-const { title, description, image, tags, url } = Astro.props;
+const { title, description, image, tags, gitHubUrl, siteUrl } = Astro.props;
 ---
 
 <article
@@ -32,5 +34,9 @@ const { title, description, image, tags, url } = Astro.props;
       style={`background-image: url('${image}')`}
     >
     </div>
+  </div>
+  <div class="flex gap-x-4">
+    <LinkButton url={gitHubUrl}>Código fuente</LinkButton>
+    <LinkButton url={siteUrl}>Sitio web</LinkButton>
   </div>
 </article>
