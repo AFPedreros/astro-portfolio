@@ -1,9 +1,9 @@
 ---
-import { Icons } from "@/components/Icons";
+import { Icons } from '@/components/Icons';
 
 interface Props {
-  href: string;
-  iconName: keyof typeof Icons;
+	href: string;
+	iconName: keyof typeof Icons;
 }
 
 const { href, iconName } = Astro.props;
@@ -12,7 +12,8 @@ const IconComponent = Icons[iconName];
 ---
 
 <a
-  class="inline-flex h-8 w-8 items-center justify-center whitespace-nowrap rounded-full border border-border text-secondary transition-colors duration-300 hover:bg-primary hover:text-background"
-  href={href}
-  target="_blank"><IconComponent className="h-4 w-4" /></a
->
+	class="inline-flex h-8 w-8 items-center justify-center whitespace-nowrap rounded-full border border-border text-secondary transition-colors duration-300 hover:bg-primary hover:text-background"
+	href={href}
+	target="_blank"
+	><IconComponent className="h-4 w-4" />
+</a>
