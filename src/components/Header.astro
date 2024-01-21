@@ -1,36 +1,31 @@
 ---
-import { Icons } from "@/components/Icons";
+import { Icons } from '@/components/Icons'
 ---
 
 <header class="container fixed z-50 flex h-20 items-center justify-center">
-  <div
-    class="flex items-center gap-4 rounded-full border border-border bg-background py-1 pr-1 pl-4"
-  >
-    <a href="#header-menu" class="md:hidden"><Icons.menu /></a>
-    <nav
-      id="header-menu"
-      class="fixed px-4 py-20 gap-y-8 md:p-0 w-full h-dvh inset-0 bg-primary/90 text-3xl flex flex-col items-start md:gap-x-4 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-base md:flex-row md:translate-y-[initial] text-background md:text-primary"
-    >
-      <a class="hover:underline hover:underline-offset-2" href="#top">Home</a>
-      <a class="hover:underline hover:underline-offset-2" href="#experience"
-        >Experience</a
-      >
-      <a class="hover:underline hover:underline-offset-2" href="#projects"
-        >Projects</a
-      >
-      <a class="hover:underline hover:underline-offset-2" href="#skills"
-        >Skills</a
-      >
-      <a
-        href="#header-nav"
-        class="md:hidden border border-background absolute p-2 bg-background text-primary top-6 right-6 rounded-full hover:bg-transparent hover:text-background transition-colors duration-150"
-      >
-        <Icons.close />
-      </a>
-    </nav>
-    <a
-      class="rounded-full border border-primary bg-primary px-4 py-1 text-background transition-colors duration-300 hover:bg-transparent hover:text-primary"
-      href="#contact">Contact</a
-    >
-  </div>
+	<div
+		class="flex items-center gap-4 rounded-full border border-border bg-background py-1 pr-1 pl-4"
+	>
+		<a href="#header-menu" class="md:hidden"><Icons.menu /></a>
+		<nav
+			id="header-menu"
+			class="fixed px-4 py-20 gap-y-8 md:p-0 w-full h-dvh inset-0 bg-primary/90 text-3xl flex flex-col items-start md:gap-x-4 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-base md:flex-row md:translate-y-[initial] text-background md:text-primary"
+		>
+			<a class="hover:underline hover:underline-offset-2" href="#top">Home</a>
+			<a class="hover:underline hover:underline-offset-2" href="#experience">Experience</a>
+			<a class="hover:underline hover:underline-offset-2" href="#projects">Projects</a>
+			<a class="hover:underline hover:underline-offset-2" href="#skills">Skills</a>
+
+			<a
+				href="#header-nav"
+				class="md:hidden border-background border absolute p-2 bg-background text-primary top-6 right-6 rounded-full hover:bg-transparent hover:text-background transition-colors duration-150"
+			>
+				<Icons.close />
+			</a>
+		</nav>
+		<a
+			class="rounded-full border border-primary bg-primary px-4 py-1 text-background transition-colors duration-300 text-nowrap hover:bg-transparent hover:text-primary"
+			href="#contact">Download CV</a
+		>
+	</div>
 </header>

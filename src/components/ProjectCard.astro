@@ -7,7 +7,7 @@ type Props = {
   description: string;
   image: string;
   tags: string[];
-  gitHubUrl: string;
+  gitHubUrl?: string;
   siteUrl: string;
 };
 
@@ -36,7 +36,7 @@ const { title, description, image, tags, gitHubUrl, siteUrl } = Astro.props;
     </div>
   </div>
   <div class="flex gap-x-4">
-    <LinkButton url={gitHubUrl}>Código fuente</LinkButton>
+    {!!gitHubUrl && <LinkButton url={gitHubUrl}>Código fuente</LinkButton>}
     <LinkButton url={siteUrl}>Sitio web</LinkButton>
   </div>
 </article>
