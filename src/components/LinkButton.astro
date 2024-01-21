@@ -16,7 +16,7 @@ const { url } = Astro.props;
 	>
 		<slot />
 		<Icons.arrowUpRight
-			className="h-4 w-4 group-hover/item:animate-jump group-hover/item:animate-duration-1000"
+			className="h-4 w-4 transition-all duration-300 group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5"
 		/>
 	</span>
 </a>
