@@ -1,41 +1,33 @@
 ---
-import SocialIcon from "@/components/SocialIcon.astro";
-import { Icons } from "@/components/Icons";
+import SocialIcon from '@/components/SocialIcon.astro';
+import { Icons } from '@/components/Icons';
 ---
 
-<section
-  class="mx-auto flex min-h-screen animate-fade-up max-w-3xl items-center justify-between"
->
-  <div class="flex flex-col">
-    <img
-      class="h-16 w-16 rounded-full"
-      src="https://avatars.githubusercontent.com/u/108299885?v=4"
-      alt="Foto"
-    />
-    <h1 class="mt-4 text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
-      Felipe Pedreros
-    </h1>
-    <h2 class="mt-4 text-xl font-thin text-secondary lg:text-2xl">
-      Full Stack Engineer focused on building products with extra attention to
-      detail.
-    </h2>
-    <a
-      class="flex items-center gap-x-2 hover:underline"
-      href="https://www.google.com/maps/place/Cali"
-      target="_blank"
-    >
-      <Icons.globe className="h-[14px] w-[14px] text-secondary" />
-      <span class="text-sm text-secondary">Cali, Colombia</span>
-    </a>
-    <div class="flex flex-wrap gap-1 pt-4">
-      <SocialIcon href="mailto:felipe.pedreros94@gmail.com" iconName="mail" />
-      <SocialIcon href="tel:+573178945388" iconName="phone" />
-      <SocialIcon href="https://github.com/AFPedreros" iconName="github" />
-      <SocialIcon
-        href="https://www.linkedin.com/in/afelipe-pedreros"
-        iconName="linkedin"
-      />
-      <SocialIcon href="https://twitter.com/AFelipePedreros" iconName="x" />
-    </div>
-  </div>
+<section class="mx-auto flex min-h-screen max-w-3xl animate-fade-up items-center justify-between">
+	<div class="flex flex-col">
+		<img
+			class="h-16 w-16 rounded-full"
+			src="https://avatars.githubusercontent.com/u/108299885?v=4"
+			alt="Foto"
+		/>
+		<h1 class="mt-4 text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">Felipe Pedreros</h1>
+		<h2 class="mt-4 text-xl font-thin text-secondary lg:text-2xl">
+			Full Stack Engineer focused on building products with extra attention to detail.
+		</h2>
+		<a
+			class="flex items-center gap-x-2"
+			href="https://www.google.com/maps/place/Cali"
+			target="_blank"
+		>
+			<Icons.globe className="h-[14px] w-[14px] text-secondary" />
+			<span class="text-sm text-secondary">Cali, Colombia</span>
+		</a>
+		<div class="flex flex-wrap gap-1 pt-4">
+			<SocialIcon href="mailto:felipe.pedreros94@gmail.com" iconName="mail" />
+			<SocialIcon href="tel:+573178945388" iconName="phone" />
+			<SocialIcon href="https://github.com/AFPedreros" iconName="github" />
+			<SocialIcon href="https://www.linkedin.com/in/afelipe-pedreros" iconName="linkedin" />
+			<SocialIcon href="https://twitter.com/AFelipePedreros" iconName="x" />
+		</div>
+	</div>
 </section>

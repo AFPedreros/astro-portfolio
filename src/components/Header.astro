@@ -1,30 +1,31 @@
 ---
-import { Icons } from '@/components/Icons'
+import { Icons } from '@/components/Icons';
+import NavItem from '@/components/NavItem.astro';
 ---
 
 <header class="container fixed z-50 flex h-20 items-center justify-center">
 	<div
-		class="flex items-center gap-4 rounded-full border border-border bg-background py-1 pr-1 pl-4"
+		class="flex items-center gap-4 rounded-full border border-border bg-background py-1 pl-4 pr-1"
 	>
 		<a href="#header-menu" class="md:hidden"><Icons.menu /></a>
 		<nav
 			id="header-menu"
-			class="fixed px-4 py-20 gap-y-8 md:p-0 w-full h-dvh inset-0 bg-primary/90 text-3xl flex flex-col items-start md:gap-x-4 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-base md:flex-row md:translate-y-[initial] text-background md:text-primary"
+			class="fixed inset-0 flex h-dvh w-full -translate-y-full flex-col items-start gap-y-8 bg-primary/90 px-4 py-20 text-3xl text-background transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:translate-y-[initial] md:flex-row md:gap-x-4 md:bg-[initial] md:p-0 md:text-base md:text-primary"
 		>
-			<a class="hover:underline hover:underline-offset-2" href="#top">Home</a>
-			<a class="hover:underline hover:underline-offset-2" href="#experience">Experience</a>
-			<a class="hover:underline hover:underline-offset-2" href="#projects">Projects</a>
-			<a class="hover:underline hover:underline-offset-2" href="#skills">Skills</a>
+			<NavItem url="#top">Home</NavItem>
+			<NavItem url="#experience">Experience</NavItem>
+			<NavItem url="#projects">Projects</NavItem>
+			<NavItem url="#skills">Skill</NavItem>
 
 			<a
 				href="#header-nav"
-				class="md:hidden border-background border absolute p-2 bg-background text-primary top-6 right-6 rounded-full hover:bg-transparent hover:text-background transition-colors duration-150"
+				class="absolute right-6 top-6 rounded-full border border-background bg-background p-2 text-primary transition-colors duration-150 hover:bg-transparent hover:text-background md:hidden"
 			>
 				<Icons.close />
 			</a>
 		</nav>
 		<a
-			class="rounded-full border border-primary bg-primary px-4 py-1 text-background transition-colors duration-300 text-nowrap hover:bg-transparent hover:text-primary"
+			class="text-nowrap rounded-full border border-primary bg-primary px-4 py-1 text-background transition-colors duration-300 hover:bg-transparent hover:text-primary"
 			href="#contact">Download CV</a
 		>
 	</div>

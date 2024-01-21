@@ -1,0 +1,20 @@
+---
+type Props = {
+	url: string;
+	target?: string;
+};
+
+const { url, target } = Astro.props;
+---
+
+<a
+	class="group text-primary transition-all duration-300 ease-in-out"
+	href={url}
+	target={target ? target : ''}
+>
+	<span
+		class="bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-300 ease-out group-hover:bg-[length:100%_2px]"
+	>
+		<slot />
+	</span>
+</a>
