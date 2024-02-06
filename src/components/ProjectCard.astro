@@ -35,10 +35,10 @@ const { title, description, image, tags, gitHubUrl, siteUrl } = Astro.props;
 		{
 			!!gitHubUrl && (
 				<LinkButton url={gitHubUrl}>
-					<span class="pt-2">Código fuente</span>
+					<span class="pt-2">Code</span>
 				</LinkButton>
 			)
 		}
-		<LinkButton url={siteUrl}><span class="pt-2">Sitio web</span></LinkButton>
+		<LinkButton url={siteUrl}><span class="pt-2">Website</span></LinkButton>
 	</div>
 </article>

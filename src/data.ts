@@ -25,7 +25,7 @@ export const projects = [
 
 		image: '/images/project-1.png',
 		tags: ['Astro', 'Tailwind CSS'],
-		gitHubUrl: 'gitHubUrl',
+		gitHubUrl: 'https://github.com/AFPedreros/laura-calero-portfolio',
 		siteUrl: 'https://laura-calero-portfolio.vercel.app/'
 	}
 ];
