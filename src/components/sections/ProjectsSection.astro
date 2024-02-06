@@ -1,5 +1,6 @@
 ---
 import ProjectCard from '@/components/ProjectCard.astro';
+import { projects } from '@/data';
 ---
 
 <section class="mx-auto flex max-w-3xl items-center justify-between pt-8 md:pt-12 lg:pt-24">
@@ -9,13 +10,17 @@ import ProjectCard from '@/components/ProjectCard.astro';
 		</h2>
 
 		<div class="grid gap-4 sm:grid-cols-2">
-			<ProjectCard
-				title="Shambala landing page"
-				description="A platform to build and grow your online business."
-				image="https://porfolio.dev/projects/svgl.webp"
-				tags={['Next.js', 'Tailwind CSS']}
-				siteUrl="https://empresas.shambala.life"
-			/>
+			{
+				projects.map((project) => (
+					<ProjectCard
+						title={project.title}
+						description={project.description}
+						image={project.image}
+						tags={project.tags}
+						siteUrl={project.siteUrl}
+					/>
+				))
+			}
 		</div>
 	</div>
 </section>
