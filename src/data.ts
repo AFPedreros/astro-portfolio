@@ -5,7 +5,7 @@ export const experiences = [
 		timeRange: 'Sep 2023 - Present',
 		jobTitle: 'Full Stack Developer',
 		description:
-			'Spearheaded the development of the company’s enterprise landing page, laying the groundwork for a stronger and more accessible online presence. I am currently part of a dynamic team transforming an LMS into an interactive platform akin to a social network, featuring discussion groups and an internal chat system to foster user collaboration and communication.'
+			"Led the creation of our main business webpage, which made us more visible online. Now, I'm working with a team to make our Learning Management System (LMS) more like a social network, adding group chats and messaging to help users work together and talk more easily."
 	},
 	{
 		companyName: 'Partner',
@@ -13,7 +13,7 @@ export const experiences = [
 		timeRange: 'Feb 2023 - Sep 2023',
 		jobTitle: 'Front End Developer',
 		description:
-			'Tasked with enhancing client-business interaction through the development of innovative Next.js applications. Notably, I developed an app for automatic invoice redemption via photo submissions, significantly improving operational efficiency, and an internal tool for generating newsletter templates. Additionally, I managed and optimized WordPress sites, elevating user experience and site performance.'
+			'Worked on improving how clients and our business interact by building innovative Next.js applications. I developed an app that simplifies invoice processing with photo uploads, which really sped things up. I also built a tool that makes it easy to create newsletter templates. Besides that, I managed and fine-tuned our WordPress websites to enhance the experience for visitors and boost the sites performance.'
 	}
 ];
 
