@@ -20,9 +20,9 @@ git  clone  https://github.com/AFPedreros/astro-portfolio.git
 
 cd  astro-portfolio
 
-npm  install
+pnpm  install
 
-npm  run  dev
+pnpm  run  dev
 
 ```
 
