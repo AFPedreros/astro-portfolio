@@ -30,16 +30,12 @@ npm  run  dev
 
 All commands are run from the root of the project, from a terminal:
 
-| Command | Action |
-
-| :------------------------ | :----------------------------------------------- |
-
-| `dev` | Starts local dev server at `localhost:4321` |
-
-| `build` | Build your production site to `./dist/` |
-
+| Command   | Action                                       |
+| :-------- | :------------------------------------------- |
+| `dev`     | Starts local dev server at `localhost:4321`  |
+| `build`   | Build your production site to `./dist/`      |
 | `preview` | Preview your build locally, before deploying |
 
 ## 🔑 License
 
-[MIT](https://github.com/AFPedreros) License - Created by o check [Felipe](https://github.com/AFPedreros).
+[MIT](https://github.com/AFPedreros/astro-portfolio/blob/main/LICENSE.txt) License - Created by o check [Felipe](https://github.com/AFPedreros).
