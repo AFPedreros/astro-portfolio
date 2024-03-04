@@ -197,7 +197,7 @@ export const Icons = {
 		</svg>
 	),
 	nestJS: (props: IconProps) => (
-		<svg svg role="img" viewBox="0 0 24 24" {...props}>
+		<svg role="img" viewBox="0 0 24 24" {...props}>
 			<g clip-path="url(#clip0_55_2)">
 				<path
 					fill-rule="evenodd"
