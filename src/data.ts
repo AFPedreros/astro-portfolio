@@ -19,7 +19,7 @@ export const experiences = [
 
 export const projects = [
 	{
-		title: 'Growth Marketer Portfolio Template',
+		title: 'Creative Portfolio Template',
 		description:
 			"Developed a minimalist portfolio template using Astro and Tailwind CSS, highlighting a growth marketer's expertise with smooth animations and a bento grid for visual content, crafted for impact and speed.",
 
@@ -36,6 +36,6 @@ export const projects = [
 		image: '/images/project-2.png',
 		tags: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'Clerk'],
 		gitHubUrl: 'https://github.com/AFPedreros/video-app',
-		siteUrl: 'cineverse-beta.vercel.app'
+		siteUrl: 'https://cineverse-beta.vercel.app'
 	}
 ];
