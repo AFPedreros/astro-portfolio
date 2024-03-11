@@ -19,9 +19,9 @@ export const experiences = [
 
 export const projects = [
 	{
-		title: 'Growth Marketer Portfolio',
+		title: 'Growth Marketer Portfolio Template',
 		description:
-			"Developed a minimalist portfolio using Astro and Tailwind CSS, highlighting a growth marketer's expertise with smooth animations and a bento grid for visual content, crafted for impact and speed.",
+			"Developed a minimalist portfolio template using Astro and Tailwind CSS, highlighting a growth marketer's expertise with smooth animations and a bento grid for visual content, crafted for impact and speed.",
 
 		image: '/images/project-1.png',
 		tags: ['Astro', 'Tailwind CSS'],
@@ -31,7 +31,7 @@ export const projects = [
 	{
 		title: 'TMDB Explorer',
 		description:
-			'Developed &quotCineverse&quot, a Next.js web application offering an engaging video browsing experience. Users can effortlessly register and explore a curated selection of movies and series, with infinite scrolling and dynamic categorization, all integrated with the TMDB API for real-time data. Designed with Tailwind CSS for a sleek look, and Clerk for secure authentication, this project delivers both high performance and immersive user interactions.',
+			'Crafted a sleek Next.js streaming app with Tailwind CSS, featuring secure login via Clerk, infinite scrolling, and dynamic categorization, all powered by the TMDB API for live movie and series exploration.',
 
 		image: '/images/project-2.png',
 		tags: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'Clerk'],

@@ -19,26 +19,26 @@ const { title, description, image, tags, gitHubUrl, siteUrl } = Astro.props;
 	<p class="text-sm text-secondary">
 		{description}
 	</p>
-	<div class="mt-2 flex flex-wrap gap-1">
-		{tags.map((tag) => <Badge text={tag} />)}
-	</div>
-	<div class="relative mt-2 aspect-auto h-48 overflow-hidden rounded-md sm:aspect-video">
-		<div
-			class="transition-scale -z-10
-           h-full bg-cover
-          bg-center bg-no-repeat duration-500 ease-in-out group-hover:scale-110"
-			style={`background-image: url('${image}')`}
-		>
+	<div class="flex flex-1 flex-col justify-end">
+		<div class="mt-2 flex flex-wrap gap-1">
+			{tags.map((tag) => <Badge text={tag} />)}
 		</div>
-	</div>
-	<div class="flex gap-x-4">
-		{
-			!!gitHubUrl && (
-				<LinkButton url={gitHubUrl}>
-					<span class="pt-2">Code</span>
-				</LinkButton>
-			)
-		}
-		<LinkButton url={siteUrl}><span class="pt-2">Website</span></LinkButton>
+		<div class="relative mt-2 aspect-auto h-48 overflow-hidden rounded-md sm:aspect-video">
+			<div
+				class="transition-scale -z-10 h-full bg-cover bg-center bg-no-repeat duration-500 ease-in-out group-hover:scale-110"
+				style={`background-image: url('${image}')`}
+			>
+			</div>
+		</div>
+		<div class="flex gap-x-4">
+			{
+				!!gitHubUrl && (
+					<LinkButton url={gitHubUrl}>
+						<span class="pt-2">Code</span>
+					</LinkButton>
+				)
+			}
+			<LinkButton url={siteUrl}><span class="pt-2">Website</span></LinkButton>
+		</div>
 	</div>
 </article>
