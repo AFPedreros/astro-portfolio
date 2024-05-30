@@ -19,9 +19,9 @@ export const experiences = [
 
 export const projects = [
 	{
-		title: 'Creative Portfolio Template',
+		title: 'Creative Portfolio',
 		description:
-			"Developed a minimalist portfolio template using Astro and Tailwind CSS, highlighting a growth marketer's expertise with smooth animations and a bento grid for visual content, crafted for impact and speed.",
+			"Developed a minimalist portfolio using Astro and Tailwind CSS, highlighting a growth marketer's expertise with smooth animations and a bento grid for visual content, crafted for impact and speed.",
 
 		image: '/images/project-1.png',
 		tags: ['Astro', 'Tailwind CSS'],
