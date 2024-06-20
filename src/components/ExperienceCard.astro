@@ -12,21 +12,28 @@ type Props = {
 const { companyName, companyUrl, timeRange, jobTitle, description } = Astro.props;
 ---
 
-<li class="mb-10 ms-4 first:-mt-2">
-	<div class="absolute -start-2 mt-1.5 h-4 w-4 rounded-full border border-primary bg-primary"></div>
-	<div class="flex flex-col justify-between gap-x-2 text-base sm:flex-row sm:items-center">
-		{
-			!!companyUrl && (
-				<LinkButton url={companyUrl}>
-					<h3 class="text-lg font-semibold lg:text-xl">{companyName}</h3>
-				</LinkButton>
-			)
-		}
-		{!companyUrl && <h3 class="text-lg font-semibold lg:text-xl">{companyName}</h3>}
-		<time class="text-secondary">{timeRange}</time>
-	</div>
-	<h4>{jobTitle}</h4>
-	<p class="mt-2 text-secondary">
-		{description}
-	</p>
-</li>
+<a
+	href={companyUrl}
+	class="group/item justify-center text-primary transition-all duration-300 ease-in-out"
+	target="_blank"
+>
+	<li class="mb-10 ms-4 first:-mt-2">
+		<div class="absolute -start-2 mt-1.5 h-4 w-4 rounded-full border border-primary bg-primary">
+		</div>
+		<div class="flex flex-col justify-between gap-x-2 text-base sm:flex-row sm:items-center">
+			{
+				!!companyUrl && (
+					<LinkButton>
+						<h3 class="text-lg font-semibold lg:text-xl">{companyName}</h3>
+					</LinkButton>
+				)
+			}
+			{!companyUrl && <h3 class="text-lg font-semibold lg:text-xl">{companyName}</h3>}
+			<time class="text-secondary">{timeRange}</time>
+		</div>
+		<h4>{jobTitle}</h4>
+		<p class="mt-2 text-secondary">
+			{description}
+		</p>
+	</li>
+</a>
