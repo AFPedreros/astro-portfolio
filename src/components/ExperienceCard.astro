@@ -1,5 +1,6 @@
 ---
 import LinkButton from '@/components/LinkButton.astro';
+import { Icons } from './Icons';
 
 type Props = {
 	companyName: string;
@@ -21,14 +22,12 @@ const { companyName, companyUrl, timeRange, jobTitle, description } = Astro.prop
 		<div class="absolute -start-2 mt-1.5 h-4 w-4 rounded-full border border-primary bg-primary">
 		</div>
 		<div class="flex flex-col justify-between gap-x-2 text-base sm:flex-row sm:items-center">
-			{
-				!!companyUrl && (
-					<LinkButton>
-						<h3 class="text-lg font-semibold lg:text-xl">{companyName}</h3>
-					</LinkButton>
-				)
-			}
-			{!companyUrl && <h3 class="text-lg font-semibold lg:text-xl">{companyName}</h3>}
+			<h3 class="flex items-center gap-x-1 text-lg font-semibold lg:text-xl">
+				{companyName}
+				<Icons.arrowUpRight
+					className="h-4 w-4 transition-all duration-200 group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5"
+				/>
+			</h3>
 			<time class="text-secondary">{timeRange}</time>
 		</div>
 		<h4>{jobTitle}</h4>
