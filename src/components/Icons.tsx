@@ -6,7 +6,6 @@ type IconProps = React.HTMLAttributes<SVGElement>;
 export const Icons = {
 	globe: Globe2,
 	mail: Mail,
-	phone: Phone,
 	close: X,
 	menu: Menu,
 	arrowUpRight: ArrowUpRight,

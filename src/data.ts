@@ -1,11 +1,27 @@
 export const experiences = [
 	{
-		companyName: 'Shambala',
-		companyUrl: 'https://www.shambala.life/',
-		timeRange: 'Sep 2023 - Present',
+		companyName: 'Fox Ordering',
+		companyUrl: 'https://foxordering.com/',
+		timeRange: 'Jun 2024 - Present',
+		jobTitle: 'Front End Developer',
+		description:
+			'Developing a comprehensive CRM system for the company while creating various marketing pages using Astro. Currently working on implementing a headless e-commerce solution using Next.js integrated with Shopify to enhance the online shopping experience.'
+	},
+	{
+		companyName: 'Pixju',
+		companyUrl: 'https://pixju.com/',
+		timeRange: 'Apr 2024 - Jun 2024',
 		jobTitle: 'Full Stack Developer',
 		description:
-			"Led the development of our primary business webpage using Next.js for the fro nt-end, significantly enhancing our online visibility. Currently, I'm collaborating with a team to evolve our Learning Management System (LMS) into a more social network-like platform by integrating group chats and messaging features. This enhancement is being achieved through the use of Next.js for the front-end to ensure a seamless user experience and NestJS for the back-end to manage efficient, scalable communication. Our goal is to facilitate easier collaboration and interaction among users."
+			'Contributed to the development of an enterprise risk security software, primarily focusing on implementing interactive map functionalities. Worked extensively with map libraries to add markers and various geographical features to enhance the visualization of security data.'
+	},
+	{
+		companyName: 'Shambala',
+		companyUrl: 'https://www.shambala.life/',
+		timeRange: 'Sep 2023 - Apr 2024',
+		jobTitle: 'Full Stack Developer',
+		description:
+			'Led the development of the primary business webpage using Next.js for the front-end, significantly enhancing online visibility. Collaborated with a team to evolve the Learning Management System (LMS) into a more social network-like platform by integrating group chats and messaging features. This enhancement was achieved through the use of Next.js for the front-end to ensure a seamless user experience and NestJS for the back-end to manage efficient, scalable communication.'
 	},
 	{
 		companyName: 'Partner',
