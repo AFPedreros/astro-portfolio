@@ -1,0 +1,11 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import HeroSection from '@/components/sections/Hero.astro';
+import BrainDay from '@/components/BrainDay';
+---
+
+<Layout title="Felipe Pedreros | A Day in My Brain.">
+	<main class="container max-w-3xl">
+		<BrainDay client:load />
+	</main>
+</Layout>
