@@ -51,6 +51,13 @@ export const projects = [
 		stack: ['Next.js', 'PostgreSQL', 'Neon']
 	},
 	{
+		name: 'Foxi',
+		url: 'https://github.com/AFPedreros/foxi-chatbot',
+		description:
+			"AI assistant for Fox Ordering: a RAG chatbot that answers questions from the company's own knowledge base, using tool calling and vector search.",
+		stack: ['Vercel AI SDK', 'OpenAI', 'pgvector', 'Drizzle']
+	},
+	{
 		name: 'Ágape Medicina Estética',
 		url: 'https://tienda.agapemedicinaestetica.com/',
 		description:
@@ -88,5 +95,5 @@ export const skills = [
 	},
 	{ category: 'E-commerce & CMS', items: ['Shopify', 'WooCommerce', 'WordPress', 'Payload'] },
 	{ category: 'Testing & Tooling', items: ['Vitest', 'Cypress', 'Git', 'Vercel', 'Figma'] },
-	{ category: 'AI Workflow', items: ['Claude Code', 'Custom agent skills'] }
+	{ category: 'AI', items: ['Claude Code', 'Custom agent skills', 'Vercel AI SDK', 'RAG with pgvector'] }
 ];
