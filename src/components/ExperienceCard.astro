@@ -1,5 +1,4 @@
 ---
-import LinkButton from '@/components/LinkButton.astro';
 import { Icons } from './Icons';
 
 type Props = {
@@ -7,10 +6,10 @@ type Props = {
 	companyUrl?: string;
 	timeRange: string;
 	jobTitle: string;
-	description: string;
+	highlights: string[];
 };
 
-const { companyName, companyUrl, timeRange, jobTitle, description } = Astro.props;
+const { companyName, companyUrl, timeRange, jobTitle, highlights } = Astro.props;
 ---
 
 <a
@@ -31,8 +30,8 @@ const { companyName, companyUrl, timeRange, jobTitle, description } = Astro.prop
 			<time class="text-secondary">{timeRange}</time>
 		</div>
 		<h4>{jobTitle}</h4>
-		<p class="mt-2 text-secondary">
-			{description}
-		</p>
+		<ul class="mt-2 list-disc space-y-1 ps-5 text-secondary">
+			{highlights.map((highlight) => <li>{highlight}</li>)}
+		</ul>
 	</li>
 </a>
