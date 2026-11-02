@@ -1,18 +1,5 @@
 ---
-import { Icons } from '@/components/Icons';
 import { skills } from '@/data';
-
-// Skills that have a brand icon in Icons.tsx; the rest render as plain text.
-const icons: Record<string, (props: { className?: string }) => any> = {
-	TypeScript: Icons.typeScript,
-	JavaScript: Icons.javaScript,
-	React: Icons.react,
-	'Next.js': Icons.nextJS,
-	Astro: Icons.astro,
-	NestJS: Icons.nestJS,
-	Payload: Icons.payload,
-	Figma: Icons.figma
-};
 ---
 
 <section class="mx-auto flex items-center justify-between pt-8 md:pt-12 lg:pt-24">
@@ -31,15 +18,9 @@ const icons: Record<string, (props: { className?: string }) => any> = {
 				>
 					<h3 class="text-lg lg:text-xl">{category}</h3>
 					<div class="grid gap-2 md:grid-cols-2">
-						{items.map((item) => {
-							const Icon = icons[item];
-							return (
-								<span class="flex items-center gap-x-2">
-									{Icon && <Icon className="h-[18px] w-[18px] shrink-0" />}
-									{item}
-								</span>
-							);
-						})}
+						{items.map((item) => (
+							<span>{item}</span>
+						))}
 					</div>
 				</article>
 			))
