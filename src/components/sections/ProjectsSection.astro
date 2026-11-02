@@ -1,0 +1,39 @@
+---
+import Badge from '@/components/Badge.astro';
+import { Icons } from '@/components/Icons';
+import { projects } from '@/data';
+---
+
+<section class="mx-auto flex items-center justify-between pt-8 md:pt-12 lg:pt-24">
+	<div class="flex w-full flex-col gap-y-4">
+		<h2
+			class="mb-2 border-b border-primary pb-2 text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl"
+		>
+			Projects
+		</h2>
+		<ul class="grid gap-6 sm:grid-cols-2">
+			{
+				projects.map((project) => (
+					<li>
+						<a
+							href={project.url}
+							target="_blank"
+							class="group/item flex h-full flex-col gap-y-3 rounded-xl border border-border p-4 text-primary transition-colors duration-200 hover:border-primary"
+						>
+							<h3 class="flex items-center gap-x-1 text-lg font-semibold lg:text-xl">
+								{project.name}
+								<Icons.arrowUpRight className="h-4 w-4 transition-all duration-200 group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
+							</h3>
+							<p class="text-pretty text-secondary">{project.description}</p>
+							<div class="mt-auto flex flex-wrap gap-1">
+								{project.stack.map((tech) => (
+									<Badge text={tech} />
+								))}
+							</div>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</section>
